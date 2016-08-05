@@ -2,4 +2,6 @@
 
 JSON_File="/PathTo/JSON/File"
 
-cat ${JSON_File} | jq .five.six.seven
+get_seven=".five.six.seven"
+
+cat ${JSON_File} | jq ${get_seven}
